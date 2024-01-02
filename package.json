@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "sass": "mkdir sass",
+    "sass-folders": "cd sass && md abstracts, base, component, layout",
+    "abstracts-files": "cd sass/abstracts && ni _functions.scss, _mixins.scss, _variables.scss",
+    "create-sass": "npm run sass && npm run sass-folders && npm run abstracts-files"
   },
   "private": true,
   "dependencies": {

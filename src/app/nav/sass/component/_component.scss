@@ -1,0 +1,73 @@
+.menu-button {
+  transform: scale(1.5);
+  color: $color-grey-dark;
+}
+.site-name {
+  background: linear-gradient(to right, $color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu-list-horizontal-div {
+  padding-right: 20px;
+  border-right: 1px solid $color-disabled;
+  transition: all 0.2s;
+}
+.social-list-horizontal-div {
+  padding-left: 20px;
+}
+.menu-list-horizontal {
+  list-style: none;
+  .list-item {
+    display: inline-block;
+    font-size: $default-font-size;
+    font-weight: 300;
+    color: $color-grey-medium;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        height: 2px;
+        left: 0;
+        background: $color-primary-linear-gradient;
+        animation: border-left-to-right 0.2s linear;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.social-list-horizontal {
+  display: inline-flex;
+}
+.social-icons {
+  color: $color-disabled;
+  display: inline-flex;
+  .icon-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
+.bi {
+  width: 1rem;
+  height: 1rem;
+  color: $color-disabled;
+}
+.bi-twitter-x:hover {
+  color: $color-grey-dark;
+}
+.bi-reddit,
+.bi-youtube {
+  transform: scale(1.25);
+}
+.bi-reddit:hover {
+  color: $color-reddit-orange;
+}
+.bi-youtube:hover {
+  color: $color-red;
+}

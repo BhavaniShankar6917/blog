@@ -1,0 +1,21 @@
+.skills-section {
+  padding: 8rem;
+  margin: 0;
+}
+.skills-list {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  list-style: none;
+}
+.skills {
+  display: inline-block;
+}
+.skill-logo {
+  width: 8rem;
+  filter: blur(100%);
+  transition: 0.25s all;
+}

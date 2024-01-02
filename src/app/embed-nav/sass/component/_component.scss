@@ -1,0 +1,46 @@
+
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.icon {
+  min-width: 20px;
+  min-height: 20px;
+  background-color: $color-grey-dark;
+  display: inline-block;
+}
+.menu-list {
+  display: inline-block;
+}
+.menu-list-div {
+  width: 100%;
+  text-align: center;
+}
+.list-items {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &-link {
+    text-decoration: none;
+    color: $color-grey-dark;
+    position: relative;
+    &:hover {
+      background: $color-linear-gradient;
+      color: transparent;
+      background-clip: text;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        height: 2px;
+        left: 0;
+        background: $color-linear-gradient;
+        animation: border-left-to-right 0.2s linear;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+      }
+    }
+  }
+}

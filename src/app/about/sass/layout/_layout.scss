@@ -1,0 +1,14 @@
+.about-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 5rem;
+  max-height: 85vh;
+}
+.left-section,
+.right-section {
+  padding: 3.5rem;
+}
+.left-section-content {
+  height: 100%;
+  // padding-top: 3rem;
+}
